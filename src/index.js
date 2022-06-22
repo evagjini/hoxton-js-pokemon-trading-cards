@@ -54,6 +54,76 @@ for(let pokemon of data) {
 }
  
 
+
+// input: pokemon
+// action: create a card for this pokemon
+// // output: undefined
+// function createPokemonCard(pokemon) {
+//     // let facingForwards = true
+  
+//     let cardLi = document.createElement('li')
+//     cardLi.className = 'card'
+//     cardLi.addEventListener('click', function () {
+//       // way 1
+//       if (pokeImg.src === pokemon.sprites.front_default) {
+//         pokeImg.src = pokemon.sprites.back_default
+//       } else {
+//         pokeImg.src = pokemon.sprites.front_default
+//       }
+  
+      // way 2
+      // if (facingForwards) {
+      //   pokeImg.src = pokemon.sprites.back_default
+      // } else {
+      //   pokeImg.src = pokemon.sprites.front_default
+      // }
+  
+      // facingForwards = !facingForwards
+  
+      // way 3
+      // pokeImg.src =
+      //   pokeImg.src === pokemon.sprites.front_default
+      //     ? pokemon.sprites.back_default
+      //     : pokemon.sprites.front_default
+    // })
+  
+    // cardLi.addEventListener('mouseenter', function () {
+    //   pokeImg.src = pokemon.sprites.front_default
+    // })
+  
+    // cardLi.addEventListener('mouseleave', function () {
+    //   pokeImg.src = pokemon.sprites.back_default
+    // })
+  
+//     let titleH2 = document.createElement('h2')
+//     titleH2.className = 'card--title'
+//     titleH2.textContent = pokemon.name.toUpperCase()
+  
+//     let pokeImg = document.createElement('img')
+//     pokeImg.width = 256
+//     pokeImg.className = 'card--img'
+//     pokeImg.src = pokemon.sprites.back_default
+  
+//     let statsUl = document.createElement('ul')
+//     statsUl.className = 'card--text'
+  
+//     for (let statInfo of pokemon.stats) {
+//       let statLi = document.createElement('li')
+//       statLi.textContent = `${statInfo.stat.name.toUpperCase()}: ${
+//         statInfo.base_stat
+//       }`
+//       statsUl.appendChild(statLi)
+//     }
+  
+//     cardLi.append(titleH2, pokeImg, statsUl)
+  
+//     let cardsUl = document.querySelector('.cards')
+//     cardsUl.append(cardLi)
+//   }
+  
+//   for (let pokemon of data) {
+//     createPokemonCard(pokemon)
+//   }
  
  
 
